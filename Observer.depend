@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1655093240 source:d:\10_workingspace\09_codeblock_ws\01_designpattern_study\observer\main.cpp
+1655131343 source:d:\10_workingspace\09_codeblock_ws\01_designpattern_study\observer\main.cpp
 	<iostream>
 	"publisher/pub_CAN_vehspeed_monitor.h"
 	"sub_CAN_Observer.h"
@@ -12,18 +12,18 @@
 	<string>
 	<list>
 
-1655092784 d:\10_workingspace\09_codeblock_ws\01_designpattern_study\observer\include\subscriber\subscriber_interface.h
+1655131434 d:\10_workingspace\09_codeblock_ws\01_designpattern_study\observer\include\subscriber\subscriber_interface.h
 	<string>
 	"../publisher/publisher_interface.h"
 
-1655090765 d:\10_workingspace\09_codeblock_ws\01_designpattern_study\observer\include\subscriber\sub_can_observer.h
+1655131433 d:\10_workingspace\09_codeblock_ws\01_designpattern_study\observer\include\subscriber\sub_can_observer.h
 	"subscriber_interface.h"
 
-1655092891 source:d:\10_workingspace\09_codeblock_ws\01_designpattern_study\observer\src\publisher\pub_can_vehspeed_monitor.cpp
+1655093365 source:d:\10_workingspace\09_codeblock_ws\01_designpattern_study\observer\src\publisher\pub_can_vehspeed_monitor.cpp
 	"publisher/pub_CAN_vehspeed_monitor.h"
 	<iostream>
 
-1655091766 source:d:\10_workingspace\09_codeblock_ws\01_designpattern_study\observer\src\subscriber\sub_can_observer.cpp
+1655131306 source:d:\10_workingspace\09_codeblock_ws\01_designpattern_study\observer\src\subscriber\sub_can_observer.cpp
 	"sub_CAN_Observer.h"
 	<iostream>
 	<string>

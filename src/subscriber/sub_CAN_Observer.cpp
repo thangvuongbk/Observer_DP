@@ -7,7 +7,7 @@ using namespace std;
 
 int sub_CAN_Observer::number_of_observer = 0;
 
-sub_CAN_Observer::sub_CAN_Observer()
+sub_CAN_Observer::sub_CAN_Observer(PublisherIF* publisher) : pub_object(publisher)
 {
     cout << "ctor: " << __func__ << endl;
 }
@@ -26,19 +26,19 @@ void sub_CAN_Observer::update(const std::string& what_is_changed, int value_chan
     cout << "Leaving func: " << __func__ << endl;
 }
 
-void sub_CAN_Observer::RegisterToCANObject(PublisherIF* publisher)
+void sub_CAN_Observer::RegisterToCANObject()
 {
     cout << "Entering func: " << __func__ << endl;
-    publisher->RegisterToCANObject(this);
+    pub_object->RegisterToCANObject(this);
     cout << "Hi, I'm the Observer \"" << ++number_of_observer << "\".\n";
     m_number = number_of_observer;
     cout << "Leaving func: " << __func__ << endl;
 }
 
-void sub_CAN_Observer::UnRegisterToCANObject(PublisherIF* publisher)
+void sub_CAN_Observer::UnRegisterToCANObject()
 {
     cout << "Entering func: " << __func__ << endl;
-    publisher->UnregisterToCANObject(this);
+    pub_object->UnregisterToCANObject(this);
     cout << "Observer: \"" << m_number << "\" removed from the list\n";
     cout << "Leaving func: " << __func__ << endl;
 }

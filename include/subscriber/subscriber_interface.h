@@ -11,8 +11,6 @@ class SubscriberIF {
     public:
         virtual ~SubscriberIF() {};
         virtual void update(const std::string& what_is_changed, int value_change) = 0;
-    protected:
-        PublisherIF* pub_object;
 };
 
 #endif // SUBSCRIBER_INTERFACE_H_INCLUDED
